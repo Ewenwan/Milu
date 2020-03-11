@@ -1,4 +1,11 @@
-# Project Information
+# Project Information 变异测试
+
+# 原理
+    简单的说分为下面几部
+    1.确定需要的mutation operator，
+    2.构建AST，遍历每一个node，判断是否符合哪些mutation operator的pattern， 可以看成一种分类
+    3.根据分类结果，采取每一种operator 对应的变异行为来变异，修改AST node
+    4.通过新的AST 构建新的源文件
 
 ## Introduction
 
